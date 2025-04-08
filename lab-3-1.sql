@@ -15,3 +15,10 @@
 -- +------+----------+
 
 
+.mode columns
+-- run `.help .mode` to view other options
+
+.headers on
+SELECT year, COUNT(*) 
+FROM teams
+GROUP BY year;

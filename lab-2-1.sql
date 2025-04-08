@@ -16,3 +16,12 @@
 -- +------+------------------------+------+
 
 
+.mode columns
+-- run `.help .mode` to view other options
+
+.headers on
+SELECT year, name, wins 
+FROM teams 
+WHERE wins>100
+ORDER BY year DESC;
+
